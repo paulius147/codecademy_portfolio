@@ -1,0 +1,12 @@
+*What is it built with?
+    - HTML/CSS/JS
+
+* What can it do?
+    - It gives information about me
+    - It shows what services I have
+    - It shows what projects I have built
+    - It shows what skills I have
+    - It allows to contact ME
+
+*Where it is deployed?
+    - GitHub Pages
