@@ -5,13 +5,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 
 <body>
-    hello
+    <header id="header">
+        <nav id="navbar" class="nav top">
+            <div class="container">
+                <a class="logo-link" href="#header"><img class="logo"
+                        src="/portfolio/images/logo/PauliusDev-logos_white_small.png" alt="logo"></a>
+                <ul class="navbar">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="container">
+                <h1>Front-End Web Development</h1>
+                <p class="description">I am a freelancer front-end developer based in Lithuania. Specializing at
+                    creating responsive,
+                    interactive websites for your needs. If you are a business or just a person seeking for a website,
+                    <a class="contact-link" href="#">contact me here</a>.
+                </p>
+                <div class="arrow">
+                    <a href="#services" class="btn"><i class="fas fa-arrow-circle-down fa-3x"></i></a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="slider">
+                <div class="service">
+                    <img src="/portfolio/images/services/landing.png" alt="">
+                    <h3>Landing Page</h3>
+                    <p>Create a website for your business or other activity</p>
+                </div>
+                <div class="service">
+                    <img src="/portfolio/images/services/responsive.png" alt="">
+                    <h3>Responsive Website</h3>
+                    <p>Take your website to another level and make it responsive</p>
+                </div>
+                <div class="service">
+                    <img src="/portfolio/images/services/interactive.png" alt="">
+                    <h3>Interactive Website</h3>
+                    <p>Make your website interactive</p>
+                </div>
+                <div class="service">
+                    <img src="/portfolio/images/services/psd.png" alt="">
+                    <h3>PSD To HTML</h3>
+                    <p>Contvert photoshoped design into website</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="/portfolio/images/projects/landing-page.png" alt="">
+                    <div class="project-description">
+                        <h3>Landing Page</h3>
+                        <p>This website was made with HTML/CSS and a bit of JavaScript</p>
+                        <a class="visit-btn" href="#">Visit Site</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="/portfolio/images/projects/weather-app.png" alt="">
+                    <div class="project-description">
+                        <h3>Weather App</h3>
+                        <p>This website was made with HTML/CSS/JS using weather API</p>
+                        <a class="visit-btn" href="#">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="script.js"></script>
 </body>
 
