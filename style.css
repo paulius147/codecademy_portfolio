@@ -367,8 +367,11 @@ nav .container {
   }
 
   @media only screen and (max-width: 750px) {
+
+    .navbar li {
+        margin-left: 0;
+    }
       .navbar {
-          /* display: none; */
           right: -800px;
           transition: right 0.5s;
           position: absolute;
