@@ -24,6 +24,7 @@
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <i class="fas fa-bars burger fa-2x"></i>
             </div>
         </nav>
         <section class="hero">
@@ -32,7 +33,7 @@
                 <p class="description">I am a freelancer front-end developer based in Lithuania. Specializing at
                     creating responsive,
                     interactive websites for your needs. If you are a business or just a person seeking for a website,
-                    <a class="contact-link" href="#">contact me here</a>.
+                    <a class="contact-link btn" href="#contact">contact me here</a>.
                 </p>
                 <div class="arrow">
                     <a href="#services" class="btn"><i class="fas fa-arrow-circle-down fa-3x"></i></a>
@@ -75,21 +76,51 @@
                     <img src="/portfolio/images/projects/landing-page.png" alt="">
                     <div class="project-description">
                         <h3>Landing Page</h3>
-                        <p>This website was made with HTML/CSS and a bit of JavaScript</p>
-                        <a class="visit-btn" href="#">Visit Site</a>
+                        <p>This website was made with <span class="html skill">HTML</span>/<span
+                                class="css skill">CSS</span>-<span class="sass skill">SASS</span> and a
+                            bit of <span class="javascript skill">JavaScript</span></p>
+                        <a class="visit-btn" href="https://ecstatic-lamport-b41f79.netlify.app" target="_blank">Visit
+                            Site</a>
                     </div>
                 </div>
                 <div class="project">
                     <img src="/portfolio/images/projects/weather-app.png" alt="">
                     <div class="project-description">
                         <h3>Weather App</h3>
-                        <p>This website was made with HTML/CSS/JS using weather API</p>
-                        <a class="visit-btn" href="#">Visit Site</a>
+                        <p>This website was made with <span class="html skill">HTML</span>/<span
+                                class="css skill">CSS</span>/<span class="javascript skill">JavaScript</span> using
+                            weather API</p>
+                        <a class="visit-btn" href="https://jolly-mirzakhani-342ea1.netlify.app" target="_blank">Visit
+                            Site</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <form class="contact-form">
+                <input class="email" type="email" placeholder="Enter Email">
+                <input class="subject" type="text" placeholder="Enter Subject">
+                <textarea class="message" name="message" placeholder="Enter Message"></textarea>
+                <input class="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="main-cont">
+                <span>Copyright © 2021. All Rights Reserved</span>
+                <div class="social">
+                    <i class="fab fa-facebook fa-2x"></i>
+                    <i class="fab fa-instagram fa-2x"></i>
+                    <i class="fab fa-github fa-2x"></i>
+                </div>
+            </div>
+            <span>Free SVG Background by <a class="free-svg" target="_blank" href="https://bgjar.com">BGJar</a></span>
+        </div>
+    </footer>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -98,6 +129,3 @@
 </body>
 
 </html>
-
-
-<!-- Free SVG Background by <a target="_blank" href="https://bgjar.com">BGJar</a> -->

@@ -19,7 +19,7 @@ window.onscroll = function () {
     }
 };
 
-// Smooth Scrolling
+// SMOOTH SCROLLING
 $('#navbar a, .btn').on('click', function (e) {
     if (this.hash !== '') {
         e.preventDefault();
@@ -69,3 +69,14 @@ $('.slider').slick({
         }
     ]
 });
+
+// MENU
+
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.navbar');
+
+burger.addEventListener('click', () => {
+    nav.classList.toggle('add');
+    burger.classList.toggle('fa-times')
+});
+
