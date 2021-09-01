@@ -79,4 +79,3 @@ burger.addEventListener('click', () => {
     nav.classList.toggle('add');
     burger.classList.toggle('fa-times')
 });
-
