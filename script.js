@@ -79,3 +79,20 @@ burger.addEventListener('click', () => {
     nav.classList.toggle('add');
     burger.classList.toggle('fa-times')
 });
+
+// SHOW MORE PROJECTS BUTTON
+
+const showMore = document.querySelector('.show');
+const hidden = document.querySelectorAll('.hidden');
+const oneHidden = document.querySelector('.hidden');
+
+showMore.addEventListener('click', () => {
+    hidden.forEach(pro => {
+        pro.classList.toggle('unhidden');
+    })
+    if (oneHidden.classList.contains('unhidden')) {
+        showMore.innerHTML = 'Show Less...'
+    } else {
+        showMore.innerHTML = 'Show More...'
+    }
+});
