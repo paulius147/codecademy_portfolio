@@ -20,20 +20,25 @@
             <div class="container">
                 <a class="logo-link" href="#header"><img class="logo" src="images/logo/PauliusDev-logos_white_small.png"
                         alt="logo"></a>
-                <ul class="navbar">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <i class="fas fa-bars burger fa-2x"></i>
+                <div class="burger-switch">
+                    <ul class="navbar">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <i class="fas fa-bars burger fa-2x"></i>
+                    <div class="switch">
+                        <div class="switch-btn"></div>
+                    </div>
+                </div>
             </div>
         </nav>
         <section class="hero">
             <div class="container">
-                <h1>Front-End Web Development</h1>
-                <p class="description">I am a freelancer front-end developer based in Lithuania. Specializing at
-                    creating responsive,
-                    interactive websites for your needs. If you are a business or just a person seeking for a website,
+                <h1>Hello, my name is Paulius!</h1>
+                <p class="description">I am Front-End Web developer based in Lithuania. Specializing at
+                    creating responsive and
+                    interactive websites. Take a look at my portfolio and if you are interested make sure to
                     <a class="contact-link btn" href="#contact">contact me here</a>.
                 </p>
                 <div class="arrow">
@@ -42,34 +47,34 @@
             </div>
         </section>
     </header>
-    <section id="services">
+    <section id="services" class="services">
         <div class="container">
             <h2 class="section-title">Services</h2>
             <div class="slider">
                 <div class="service">
                     <img src="images/services/landing.png" alt="">
-                    <h3>Landing Page</h3>
+                    <h3 class="service-title">Landing Page</h3>
                     <p>Create a website for your business or other activity</p>
                 </div>
                 <div class="service">
                     <img src="images/services/responsive.png" alt="">
-                    <h3>Responsive Website</h3>
+                    <h3 class="service-title">Responsive Website</h3>
                     <p>Take your website to another level and make it responsive</p>
                 </div>
                 <div class="service">
                     <img src="images/services/interactive.png" alt="">
-                    <h3>Interactive Website</h3>
+                    <h3 class="service-title">Interactive Website</h3>
                     <p>Make your website interactive</p>
                 </div>
                 <div class="service">
                     <img src="images/services/psd.png" alt="">
-                    <h3>PSD To HTML</h3>
+                    <h3 class="service-title">PSD To HTML</h3>
                     <p>Contvert photoshoped design into website</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="section-title">Portfolio</h2>
             <div class="projects">
@@ -107,6 +112,24 @@
                     </div>
                 </div>
                 <div class="project">
+                    <div class="img-container">
+                        <img class="image" src="images/projects/contact-keeper.PNG" alt="Contact Keeper">
+                        <div class="middle">
+                            <a href="https://github.com/paulius147/contact-keeper" target="_blank" class="text">View
+                                Code
+                                On GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h3>Contact Keeper</h3>
+                        <p>This website was made with <span class="react skill">Mern</span> Stack (MongoDB, Express,
+                            React, Node) while taking "React Front to End" course on Udemy.
+                        </p>
+                        <a class="visit-btn" href="https://polar-crag-71435.herokuapp.com" target="_blank">Visit
+                            Site</a>
+                    </div>
+                </div>
+                <div class="hidden project">
                     <div class="img-container">
                         <img class="image" src="images/projects/github.PNG" alt="GitHub Finder">
                         <div class="middle">
@@ -163,10 +186,10 @@
     <section id="contact">
         <div class="container">
             <h2 class="section-title">Contact</h2>
-            <form class="contact-form">
-                <input class="email" type="email" placeholder="Enter Email">
-                <input class="subject" type="text" placeholder="Enter Subject">
-                <textarea class="message" name="message" placeholder="Enter Message"></textarea>
+            <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                <input class="email" name='email' type="email" placeholder="Enter Email" required>
+                <input class="subject" name='subject' type="text" placeholder="Enter Subject" required>
+                <textarea class="message" name="message" placeholder="Enter Message" required></textarea>
                 <input class="submit" type="submit" value="Submit">
             </form>
         </div>
@@ -174,14 +197,16 @@
     <footer>
         <div class="container">
             <div class="main-cont">
-                <span>Copyright © 2021. All Rights Reserved</span>
+                <span>Copyright © 2021. All Rights Reserved. | Free SVG Background by <a class="free-svg"
+                        target="_blank" href="https://bgjar.com">BGJar</a></span>
                 <div class="social">
-                    <i class="fab fa-facebook fa-2x"></i>
-                    <i class="fab fa-instagram fa-2x"></i>
-                    <i class="fab fa-github fa-2x"></i>
+                    <a href="https://www.facebook.com/paulius.petkevicius.9/" target="_blank"><i
+                            class="fab fa-facebook fa-2x"></i></a>
+                    <a href="https://www.instagram.com/paauliuus/" target="_blank"><i
+                            class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://github.com/paulius147" target="_blank"><i class="fab fa-github fa-2x"></i></a>
                 </div>
             </div>
-            <span>Free SVG Background by <a class="free-svg" target="_blank" href="https://bgjar.com">BGJar</a></span>
         </div>
     </footer>
 
