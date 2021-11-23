@@ -312,7 +312,7 @@ nav .container {
 
   .spam {
       grid-area: spam;
-      margin: 0 auto 0 auto;
+      margin-left: auto;
   }
   .email {
       grid-area: email;
@@ -326,7 +326,7 @@ nav .container {
   .submit {
       grid-area: submit;
       width: 100px;
-      margin: auto;
+      /* margin: auto; */
       border: 0;
       background: rgba(0, 55, 126, 1);
       color: white;
@@ -452,7 +452,12 @@ nav .container {
         grid-template-areas: "email email"
                               "subject subject"
                               "message message"
-                              "spam submit";
+                              "spam spam"
+                              "submit submit";
+    }
+
+    .submit, .spam {
+        margin: auto;
     }
 
     footer .container {
