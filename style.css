@@ -302,7 +302,6 @@ nav .container {
 
   .contact-form {
       display: grid;
-      border: 1px solid black;
       grid-gap: 1rem;
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr;
@@ -313,6 +312,7 @@ nav .container {
 
   .spam {
       grid-area: spam;
+      margin: 0 auto 0 auto;
   }
   .email {
       grid-area: email;
