@@ -326,7 +326,8 @@ nav .container {
   .submit {
       grid-area: submit;
       width: 100px;
-      /* margin: auto; */
+      height: 50px;
+      margin: auto 0 auto 0;
       border: 0;
       background: rgba(0, 55, 126, 1);
       color: white;
@@ -367,6 +368,10 @@ nav .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
+  }
+  .social {
+      display: flex;
+      gap: 1rem;
   }
   .social a {
       color: white;
