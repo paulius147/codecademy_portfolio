@@ -303,13 +303,21 @@ nav .container {
   .contact-form {
       display: grid;
       grid-gap: 1rem;
-      grid-template-rows: 1fr 1fr 1f;
+      grid-template-rows: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "email message"
                             "subject message"
+                            "spam spam"
                             "submit submit";
   }
 
+  .spam {
+      grid-area: spam;
+      width: 200px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+  }
   .email {
       grid-area: email;
   }

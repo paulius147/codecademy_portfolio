@@ -186,10 +186,11 @@
     <section id="contact">
         <div class="container">
             <h2 class="section-title">Contact</h2>
-            <form class="contact-form" name="contact" method="POST" data-netlify="true">
+            <form class="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
                 <input class="email" name='email' type="email" placeholder="Enter Email" required>
                 <input class="subject" name='subject' type="text" placeholder="Enter Subject" required>
                 <textarea class="message" name="message" placeholder="Enter Message" required></textarea>
+                <div class="spam" data-netlify-recaptcha="true"></div>
                 <input class="submit" type="submit" value="Submit">
             </form>
         </div>
