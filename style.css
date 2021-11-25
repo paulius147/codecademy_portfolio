@@ -103,6 +103,11 @@ a {
 
 /* NAV */
 
+.desc {
+    font-size: 2rem;
+    max-width: 900px;
+}
+
 nav {
     position: fixed;
     top: 0px;
@@ -386,13 +391,17 @@ nav .container {
   /* SLICK ARROWS */
 
   .slick-prev:before {
-    color: red;
+    color: rgba(0, 55, 126, 1);
   }
   .slick-next:before {
-    color: red;
+    color: rgba(0, 55, 126, 1);
   }
 
   @media only screen and (max-width: 750px) {
+
+    .desc {
+        font-size: 1.3rem;
+    }
 
     .middle a {
         font-size: 0.7rem;
